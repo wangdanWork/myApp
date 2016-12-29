@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用带有数字的 ng-bind</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="quantity=2;price=89">
+		<p>总价: <span ng-bind="quantity * price"></span></p>
+	</div>
+</body>
+</html>
