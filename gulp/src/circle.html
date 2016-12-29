@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>插件饼图</title>
+</head>
+<body>
+	<canvas width="600" height="400" id="cvs">此浏览器不支持canvas!</canvas>
+	<script src="js/circle.js"></script>
+	<script>
+		createCircle({
+			canvas:"cvs",
+			data:[1245,4587,3254,6689],
+			col:["red","blue","purple","pink"],
+			txt:["第一季度","第二季度","第三季度","第四季度"]
+		})
+	</script>
+</body>
+</html>

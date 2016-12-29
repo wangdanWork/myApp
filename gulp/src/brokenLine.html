@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>折线图</title>
+</head>
+<body>
+	<canvas width="800" height="500" id="cvs" style="border:1px solid #000">此浏览器不支持canvas!</canvas>
+	<script src="js/brokenLine.js"></script>
+	<script>
+		drawChart({
+			canvas:"cvs",
+			x:["1月","2月","3月","4月","5月"],
+			y:[0,50,100,150,200,250,300],
+			data:[{
+				col:"blue",
+				datas:[120,78,290,178,200]
+			},{
+				col:"red",
+				datas:[98,65,180,260,220]
+			}]
+		})
+	</script>
+</body>
+</html>
